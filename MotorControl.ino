@@ -3,15 +3,16 @@
 const int stepPin = 3;
 const int dirPin = 2;
 
-int direction = 1; // Up
-boolean moving = true; // Moving
+int direction = 1; // Starting Direction: Up
+boolean moving = false; // Starting Movement: Still
 
 char readVal;
 
-int speed = 1000;
+int const speed = 300;
+int const steps = 200;
 
 
-Stepper stepper(100, dirPin, stepPin);
+Stepper stepper(steps, dirPin, stepPin);
 
 void setup()
 {
