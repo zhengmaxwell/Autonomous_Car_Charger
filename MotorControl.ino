@@ -8,7 +8,7 @@ boolean moving = false; // Starting Movement: Still
 
 char readVal;
 
-int const speed = 200;
+int const speed = 50;
 int const steps = 200;
 
 
