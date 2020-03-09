@@ -13,7 +13,7 @@ int const zStepPin = 7;
 
 int const xSpeed = 200;
 int const xSteps = 200;
-int const ySpeed = 200;
+int const ySpeed = 100;
 int const ySteps = 200;
 int const zSpeed = 200;
 int const zSteps = 200;
@@ -25,7 +25,7 @@ Stepper zStepper(zSteps, zDirPin, zStepPin);
 /***** Define Starting Movement *****/
 
 int xDirection = 1; // TODO: Check which direction this is
-int yDirection = 1; // TODO: Check which direction this is
+int yDirection = 1; // FORWARDS
 int zDirection = 1; // UP
 
 boolean xMoving = false; // Still
@@ -100,7 +100,7 @@ void enableY()
         stop();
     }
     motorVal = 'Y';
-    Serial.println("Y Motor: FORWARDS"); // TODO: Check Direction
+    Serial.println("Y Motor: FORWARDS"); 
 }
 void enableZ()
 {
