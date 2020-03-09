@@ -15,7 +15,7 @@ int const xSpeed = 200;
 int const xSteps = 200;
 int const ySpeed = 100;
 int const ySteps = 200;
-int const zSpeed = 200;
+int const zSpeed = 800;
 int const zSteps = 200;
 
 Stepper xStepper(xSteps, xDirPin, xStepPin);
