@@ -91,6 +91,7 @@ void enableX()
         stop();
     }
     motorVal = 'X';
+    xDirection = 1;
     Serial.println("X Motor: RIGHT"); // TODO: Check Direction
 }
 void enableY()
@@ -100,6 +101,7 @@ void enableY()
         stop();
     }
     motorVal = 'Y';
+    yDirection = 1;
     Serial.println("Y Motor: FORWARDS"); 
 }
 void enableZ()
@@ -109,6 +111,7 @@ void enableZ()
        stop(); 
     }
     motorVal = 'Z';
+    zDirection = 1;
     Serial.println("Z Motor: UP");
 }
 
