@@ -1,5 +1,4 @@
 #include <Stepper.h>
-#include <A4988.h>
 
 /***** Define Pins *****/
 
