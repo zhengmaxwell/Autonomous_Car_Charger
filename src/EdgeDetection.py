@@ -3,7 +3,7 @@ import numpy as np
 
 input = cv2.VideoCapture(0)
 
-if !input.isOpened():
+if input.isOpened() == False:
     print("Video not working")
     
 
@@ -11,7 +11,7 @@ while(input.isOpened()):
     ret, frame = input.read()
 
     if ret:
-        gray =  cv2.cvtColor(frame, cv2.COLOR_BGR2GRAY)
+        gray =  cv2.cvtCoslor(frame, cv2.COLOR_BGR2GRAY)
         grayFiltered = cv2.bilateralFilter(gray, 7, 50, 50)
 
         edges = cv2.Canny(gray, 20, 30)
