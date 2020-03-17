@@ -18,7 +18,7 @@ while(input.isOpened()):
         edgesFiltered = cv2.Canny(grayFiltered, 60, 120)
         edgesHighTresh = cv2.Canny(gray, 60, 120)
 
-        images = np.hstack((gray, edges, edgesFilters))
+        images = np.hstack((gray, edges, edgesFiltered))
 
         cv2.imshow('frame', images)
 
