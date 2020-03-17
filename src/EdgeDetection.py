@@ -3,7 +3,7 @@ import numpy as np
 
 input = cv2.VideoCapture(0)
 
-if (!input.isOpened()):
+if !input.isOpened():
     print("Video not working")
     
 
