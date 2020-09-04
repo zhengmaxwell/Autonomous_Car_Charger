@@ -26,4 +26,4 @@ Three stepper motors are used for the three movement rails. An arduino controls 
 </p>
 
 ### Software Subsystem
-Python and C++ are used to control the Arduino and Raspberry Pi. OpenCV is used to achieve computer vision. A camera on the car charger feeds video to the raspberry pi which computes edge detection of the charge port in order to send commands to the arduino to move the motors accordingly. 
+Python and C++ are used to control the Arduino and Raspberry Pi. OpenCV is used to achieve computer vision. A camera on the car charger feeds video to the Raspberry Pi which computes edge detection of the charge port in order to send commands to the arduino to move the motors accordingly. 
